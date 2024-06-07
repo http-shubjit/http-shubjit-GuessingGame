@@ -17,7 +17,7 @@ public class GameService {
      * There is no need to change anything in this constructor.
      */
     public GameService(){
-        secretNumber = 3.14;
+        this.secretNumber = 3.14;
     }
 
     /**
@@ -27,6 +27,10 @@ public class GameService {
      * @return true if guessNumber is equal to the secretNumber, false otherwise.
      */
     public boolean checkGuess(double guessNumber) {
-        return false;
+
+        if (guessNumber == secretNumber)
+            return true;
+        else
+            return false;
     }
 }
